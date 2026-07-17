@@ -25,13 +25,17 @@ https://ai-resume-gap-checker.vercel.app/
 * Extract text from the uploaded resume.
 * AI-powered analysis using **Gemini 3.1 Flash Lite**.
 * Displays:
-
   * Matched Skills
   * Missing Skills
   * Match Percentage
   * Hiring Verdict (Qualified / Almost There / Not Yet)
   * Three AI-generated reasons supporting the verdict
 * Loading and error handling.
+* **Handled Edge Cases** like:
+  * Properly validated and sanitized the job description text field both on the frontend and backend to avoid XSS attacks.
+  * Limit job description characters (4000) to save the number of tokens and not overload the context window of the LLM.
+* Followed the proper **file & folder** structure with **reusable components**, ensuring **maintainability** of code in the future. 
+
 
 ## Tech Stack
 
