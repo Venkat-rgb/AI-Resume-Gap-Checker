@@ -24,6 +24,10 @@ app.use(
 // Routes
 app.use("/api/v1/resume", resumeJDRoutes);
 
+app.get("/", (req, res) => {
+  res.send(`<h1>Server is Running Perfectly</h1>`);
+});
+
 // Starting the server
 app.listen(PORT, () => {
   console.log(`Server is running on port: ${PORT}`);
