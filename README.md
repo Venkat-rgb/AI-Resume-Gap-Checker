@@ -37,7 +37,7 @@ https://ai-resume-gap-checker.vercel.app/
 
 ### Frontend
 
-* React.js
+* React.js (Vite)
 * Tailwind CSS
 * React Hot Toast (for showing errors)
 
