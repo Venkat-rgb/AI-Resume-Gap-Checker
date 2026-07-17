@@ -1,6 +1,6 @@
 const UploadForm = ({ onSubmit, onChange, isLoading }) => {
   return (
-    <div className="border border-neutral-200 p-3 rounded-md space-y-5 w-full bg-[#f1f1f1] drop-shadow-xl">
+    <div className="border border-neutral-200 p-3 rounded-md space-y-5 w-full bg-[#f1f1f1] drop-shadow-xl h-[500px]">
       <p className="text-center text-xl font-semibold">Upload Form</p>
       <form
         className="space-y-3"
@@ -26,11 +26,12 @@ const UploadForm = ({ onSubmit, onChange, isLoading }) => {
             Job Description
           </label>
           <textarea
-            name=""
+            name="description"
             id="description"
-            className="outline-none border border-neutral-300 text-sm py-2 px-3 rounded-tr-md rounded-bl-md focus:ring-1 focus:ring-offset-0 ring-black/50"
+            className="outline-none border border-neutral-300 text-sm py-2 px-3 rounded-tr-md rounded-bl-md focus:ring-1 focus:ring-offset-0 ring-black/50 resize-none"
             placeholder="Enter the Job Description..."
             onChange={(e) => onChange(e)}
+            rows={11}
           ></textarea>
         </div>
 
